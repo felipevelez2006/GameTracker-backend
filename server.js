@@ -16,7 +16,7 @@ connectDB(process.env.MONGO_URI);
 
 // Rutas
 app.use('/api/juegos', require('./routes/juegos'));
-app.use('/api/reseñas', require('./routes/resenas'));
+app.use('/api/resenas', require('./routes/resenas'));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🔥 Servidor en puerto ${PORT}`));
